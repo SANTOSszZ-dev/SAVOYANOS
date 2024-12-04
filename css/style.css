@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root{
-    --main-color:#ff8616;
+    --main-color:#F26522;
     --black:#000b16;
     --bg:#000b16;
     --border:.1rem solid rgba(255,255,255,.3);
@@ -407,7 +407,7 @@ section{
     color:var(--main-color);
 }
 .quote-section {
-    background: linear-gradient(45deg, #f9a825, #f57c00); /* Gradiente laranja */
+    background: linear-gradient(45deg, #f9a825, #F26522); /* Gradiente laranja */
     color: white;
     text-align: center;
     padding: 5rem 2rem; /* Espaçamento interno generoso */
