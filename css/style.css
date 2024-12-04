@@ -5,6 +5,8 @@
     --black:#000b16;
     --bg:#000b16;
     --border:.1rem solid rgba(255,255,255,.3);
+    background: url('images/quote-bg.jpg') no-repeat center center/cover;
+
 }
 
 *{
@@ -404,6 +406,73 @@ section{
     font-size: 1.5rem;
     color:var(--main-color);
 }
+.quote-section {
+    background: linear-gradient(45deg, #f9a825, #f57c00); /* Gradiente laranja */
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem; /* Espaçamento interno generoso */
+    position: relative; /* Para posicionar elementos extras */
+    overflow: hidden;
+}
+
+.quote-section::before, .quote-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 20rem;
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(45deg);
+    animation: slide 6s infinite linear;
+}
+
+.quote-section::before {
+    left: -10rem;
+}
+
+.quote-section::after {
+    right: -10rem;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(-100%) rotate(45deg);
+    }
+    100% {
+        transform: translateY(100%) rotate(45deg);
+    }
+}
+
+.quote-content {
+    position: relative;
+    z-index: 1; /* Garante que o conteúdo fique acima do fundo animado */
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.quote-content i {
+    font-size: 4rem; /* Ícone maior */
+    margin-bottom: 1rem;
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.8); /* Ícone levemente opaco */
+}
+
+.quote-content h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona profundidade ao texto */
+    margin: 1rem 0;
+}
+
+.quote-content span {
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 0.8); /* Texto secundário mais claro */
+    font-style: italic;
+}
+
+
 
 .contact .row{
     display: flex;
