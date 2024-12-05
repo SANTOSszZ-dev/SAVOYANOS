@@ -276,18 +276,6 @@ section{
     border:var(--border);    
 }
 
-.menu .box-container .box {
-    padding: 5rem;
-    text-align: center;
-    border: var(--border); /* Mantém a borda */
-    border-radius: 15px; /* Adiciona arredondamento às bordas */
-    overflow: hidden; /* Garante que o conteúdo interno respeite o arredondamento */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* (Opcional) Adiciona uma sombra */
-    /* background: rgba(255, 255, 255, 0.8); Remova ou comente esta linha */
-}
-
-
-
 .menu .box-container .box h3{
     color: #fff;
     font-size: 2rem;
