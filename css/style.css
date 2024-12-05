@@ -481,11 +481,13 @@ section{
     gap:1rem;
 }
 
-.contact .row .map{
-    flex:1 1 45rem;
-    width: 100%;
-    object-fit: cover;
+.contact .row .map {
+    border-radius: 15px; /* Arredonda as bordas */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse o limite das bordas */
+    border: 2px solid var(--main-color); /* (Opcional) Adiciona uma borda */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* (Opcional) Adiciona uma sombra */
 }
+
 
 .contact .row form{
     flex:1 1 45rem;
