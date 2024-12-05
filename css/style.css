@@ -276,13 +276,16 @@ section{
     border:var(--border);    
 }
 
-.menu .box img {
-    border-radius: 50%; /* Torna a imagem circular */
-    width: 150px; /* Define a largura */
-    height: 150px; /* Define a altura */
-    object-fit: cover; /* Garante que a imagem preencha o círculo */
-    border: 2px solid var(--main-color); /* (Opcional) Adiciona uma borda */
+.menu .box-container .box {
+    padding: 5rem;
+    text-align: center;
+    border: var(--border); /* Mantém a borda */
+    border-radius: 15px; /* Adiciona arredondamento às bordas */
+    overflow: hidden; /* Garante que o conteúdo interno respeite o arredondamento */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* (Opcional) Adiciona uma sombra */
+    /* background: rgba(255, 255, 255, 0.8); Remova ou comente esta linha */
 }
+
 
 
 .menu .box-container .box h3{
